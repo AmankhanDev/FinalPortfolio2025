@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="style.css">
@@ -11,11 +12,20 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> -->
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,401,500,501,700,900&display=swap"
         rel="stylesheet">
+
     <title>Portfolio website.</title>
 </head>
 
-<body>
-    <div class="wrapper">
+<body class="hide-scrollbar">
+
+    <!-- ////////////////pre loader///////////////// -->
+    <div id="preloader">
+        <h1>Bringing creativity to your screen...</h1>
+        <div class="loader"></div>
+    </div>
+    <!-- ///////////////////////////////// -->
+
+    <div class="wrapper ">
         <header class="container">
             <div class="logo">
                 <h1>Junayad<span>.</span></h1>
@@ -25,8 +35,8 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
                 <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
             <div class="menu_icon">
@@ -34,7 +44,7 @@
             </div>
         </header>
 
-        <section class="hero_page container">
+        <section class="hero_page container" id="home">
             <div class="hero_img" data-aos="zoom-out">
                 <img src="img/Untitled design (1).png" alt="" data-aos="fade-up">
             </div>
@@ -52,8 +62,8 @@
                 </p>
 
                 <div class="hero_btn" data-aos="flip-down">
-                    <a href="">Connect With me</a>
-                    <a href="" class="cv_btn">Download CV <i class="ri-download-line"></i></a>
+                    <a href="#contact">Connect With me</a>
+                    <a href="MD_Junayad_Resume.docx" class="cv_btn">Download CV <i class="ri-download-line"></i></a>
                 </div>
             </div>
 
@@ -82,7 +92,7 @@
 
         <!-- /////////////////////  ABOUT SECTION //////////////////// -->
 
-        <section class="container about_section" style="height: 100vh">
+        <section class="container about_section" id="about">
             <h3 data-aos="fade-in" class="intro">Introduction</h3>
             <h2 data-aos="fade-in">About me</h2>
 
@@ -90,19 +100,188 @@
                 <div class="profile_img" data-aos="fade-up-right">
                     <img src="img/mainhero.jpg" alt="">
                 </div>
-                <div class="profile_texts" data-aos="fade-up-left">
-                    <p class="about_para">
-                        As a second-year BCA student, I am an aspiring front-end developer and web design enthusiast. My
-                        mission is to create visually compelling, user-friendly, and responsive websites. I constantly
-                        experiment with the latest design trends and technologies to ensure my work remains fresh and
-                        impactful. Off the screen, I enjoy playing volleyball, a sport that has taught me the value of
-                        agility and precision—skills that also translate to my coding work.
-                    </p>
+                <!-- //////////////////////// -->
+                <div class="flowbite hide-scrollbar" data-aos="fade">
+                    <div class="timeline">
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-number">1</div>
+                            <div class="timeline-content">
+                                <h2>About my life.</h2>
+                                <p>Hi, I’m Md Junayad, a final-year BCA student who loves creating websites that look
+                                    great and feel even better to use. What began as a hobby is now something I’m truly
+                                    passionate about — bringing ideas to life through clean, responsive, and
+                                    user-focused design.</p>
+                            </div>
+                            <div class="timeline-image funnyBox">
+                                <span class="hover-img marks">hover me.</span>
+                                <img src="img/shrek.gif" alt="">
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-number">2</div>
+                            <div class="timeline-content">
+                                <h2>Current Studies: BCA</h2>
+                                <p>
+                                    I’m currently pursuing a Bachelor of Computer Applications (BCA) at Burdwan
+                                    Institute of Management and Computer Science, Burdwan, under the Department of
+                                    Engineering. I’m in my 5th semester with a CGPA of 64.57%.
+                                </p>
+                            </div>
+                            <div class="timeline-image funnyBox">
+                                <span class="hover-img marks">hover me.</span>
+                                <img src="img/Nintendo Strikes Back !.gif" alt="BCA Student">
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-number">3</div>
+                            <div class="timeline-content">
+                                <h2>Higher Secondary Education</h2>
+                                <p>
+                                    I completed my 12th grade at Sanko C.S. High School under the West Bengal Board of
+                                    Secondary Education (WBBSE) in 2022. I secured 438 out of 500 marks, scoring 87.6%.
+                                </p>
+                            </div>
+                            <div class="timeline-image funnyBox">
+                                <span class="hover-img marks">hover me.</span>
+                                <img src="img/spong.gif" alt="Class 12">
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-number">4</div>
+                            <div class="timeline-content">
+                                <h2>Secondary Education</h2>
+                                <p>
+                                    I completed my 10th grade at Kulgoria High Madrasah under the West Bengal Board of
+                                    Madrasah Education (WBBME) in 2020. I scored 554 out of 800 marks, achieving a
+                                    percentage of 69.25%.
+                                </p>
+                            </div>
+                            <div class="timeline-image funnyBox">
+                                <span class="hover-img marks">hover me.</span>
+                                <img src="img/vegetaold.gif" alt="Class 10">
+                            </div>
+                        </div>
+                        <!-- //////////////////////// -->
+                    </div>
+        </section>
+
+
+
+
+        <!-- ///////////////////// start OF porject SECTION //////////////////// -->
+        <section id="projects" class="container " data-aos="fade-in">
+            <h2 class="projects">Projects</h2>
+            <div class="porject_cards">
+
+                <div class="card">
+                    <img src="img/work_ani.png" alt="Project Image">
+                    <div class="card-body">
+                        <h2 class="card-title">Future</h2>
+                        <p class="card-tech">HTML · CSS · JS · GSAP </p>
+                        <div class="card-buttons">
+                            <a href="https://amankhandev.github.io/Future/" target="_blank" class="live-btn">Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/workport.png" alt="Project Image">
+                    <div class="card-body">
+                        <h2 class="card-title">Portfolio</h2>
+                        <p class="card-tech">HTML · CSS · JS · GSAP </p>
+                        <div class="card-buttons">
+                            <a href="https://amankhandev.github.io/Portfolio-/" target="_blank"
+                                class="live-btn">Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/579shots_so.png" alt="Project Image">
+                    <div class="card-body">
+                        <h2 class="card-title">Harvest</h2>
+                        <p class="card-tech">HTML · CSS · JS </p>
+                        <div class="card-buttons">
+                            <a href="https://amankhandev.github.io/Harvest/" target="_blank" class="live-btn">Live</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <!-- ///////////////////// END OF project SECTION //////////////////// -->
 
-        <!-- ///////////////////// END OF ABOUT SECTION //////////////////// -->
+
+
+
+        <!-- ///////////////////// START OF GALLERY SECTION SECTION //////////////////// -->
+        <section class=" container" id="gallery" data-aos="fade-in">
+            <!-- Background Layers -->
+            <div class="gallery-bg">
+                <div class="gradient"></div>
+                <div class="noise"></div>
+                <!-- Gallery Content -->
+                <div class="gallery_box">
+                    <h1>Gallery</h1>
+                    <h3>Step into my lens and letters explore the art of photography and typography.</h3>
+                    <a class="gallery_btn" target="_top" href="gallery.html">CLICK HERE TO SEE THE BEAUTY</a>
+                </div>
+            </div>
+
+
+            <div class="socials">
+                <a data-aos="slide-right" href="https://github.com/amankhandev" class="icon github" data-label="GitHub"
+                    target="_blank"><i class="ri-github-fill"></i></a>
+                <a data-aos="slide-right" href="https://linkedin.com/in/mdjunayad" class="icon linkedin"
+                    data-label="LinkedIn" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                <a data-aos="slide-left" href="mailto:mdjunayad2001@gmail.com" class="icon gmail" data-label="Gmail"><i
+                        class="ri-mail-fill"></i></a>
+                <a data-aos="slide-left" href="https://instagram.com/zenin_toji.io" class="icon instagram"
+                    data-label="Instagram" target="_blank"><i class="ri-instagram-fill"></i></a>
+            </div>
+        </section>
+        <!-- ///////////////////// END OF GALLERY SECTION //////////////////// -->
+
+
+        <!-- ///////////////////// START OF CONTACT SECTION //////////////////// -->
+        <section id="contact" class="container" data-aos="fade-up">
+            <div class="contact_container">
+                <div class="contact_right">
+                    <!-- <img src="img/contact.jpg" alt=""> -->
+                </div>
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact_left">
+                    <div class="contact_left_title">
+                        <h2>Get in touch</h2>
+                    </div>
+                    <input type="hidden" name="access_key" value="f36168aa-035e-486a-b732-a88327e3d5bf">
+                    <input type="text" name="name" placeholder="Your Name" class="contact_inputs" required>
+                    <input type="email" name="email" placeholder="Your Email" class="contact_inputs" required>
+                    <textarea name="message" placeholder="Your Message" class="contact_inputs"></textarea>
+                    <button type="submit">Submit <i class="ri-arrow-right-line"></i></button>
+                </form>
+            </div>
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-left">
+                        <div class="logo">
+                            <h1>Junayad<span>.</span></h1>
+                        </div>
+                        <p>&copy; 2025 All rights reserved.</p>
+                    </div>
+                    <div class="footer-right">
+                        <img src="img/gallery/Cat Pixel.gif" alt="" style="width: 70px; height: 70px;">
+                    </div>
+                </div>
+            </footer>
+
+        </section>
+        <!-- ///////////////////// END OF CONTACT SECTION //////////////////// -->
+
+
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
